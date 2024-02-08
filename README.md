@@ -126,6 +126,14 @@ I feel like there's a piece of functionality that
 doesn't belong to that class, I'll define it in a 
 helper_functions folder and import it as needed.
 
+To get my selectors, I would inspect each element,
+copy the selector, and test that the selector
+works by typing the following into the console:
+
+document.querySelector(<CSS_SELECTOR>)
+
+![Selectors](/documentation/screenshots/get_selectors.jpg?raw=true "javascript_console")
+
 To run the tests, simply type:
 
 pytest test_suite.py
