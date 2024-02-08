@@ -10,7 +10,7 @@ https://python-poetry.org/
 Click on documentation
 Under installation, click "With the official install"
 
-<screenshot>
+![Installation instructions](/documentation/screenshots/installation1.jpg?raw=true "poetry website")
 
 Alternatively, you can do 
 
