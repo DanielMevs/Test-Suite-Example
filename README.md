@@ -14,8 +14,10 @@ Under installation, click "With the official install"
 
 Alternatively, you can do 
 
+```
+python
 pip install poetry
-
+```
 However, this way of installing it is not recommended
 as you'd have to install it separately for every
 version of Python you have installed on your system.
