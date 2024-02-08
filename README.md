@@ -76,7 +76,7 @@ endencies in tree hierarchy format. This will give
 you a better sense of what packages belong to what group 
 of dependencies.
 
-<screenshot>
+![poetry dependency tree](/documentation/screenshots/poetry_show_tree.jpg?raw=true "poetry tree")
 
 The first thing I did when creating this project was
 to create my fixtures. Fixtures give your test contextual
