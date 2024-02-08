@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "test_suite"
+version = "0.1.0"
+description = "Test suite for 360 manager"
+authors = ["DanielMevs <dannymevs@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+selenium = "^4.17.2"
+pytest = "^8.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.1.1"
+flake8 = "^7.0.0"
+pre-commit = "^3.6.0"
+tox = "^4.12.1"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
