@@ -22,7 +22,7 @@ as you'd have to install it separately for every
 version of Python you have installed on your system.
 
 To start the project first type poetry init to create a 
-pyproject.toml file that all dependencies meta data about 
+```pyproject.toml``` file that all dependencies meta data about 
 the project will be stored.
 
 Use the screenshot below as a template for how to init 
@@ -41,22 +41,23 @@ Virtual environment already activated: /home/<user>/.cache/
 pypoetry/virtualenvs/my-project-0wt3KWFj-py3.7
 
 Do the following
-
+```
 cd /home/<user>/.cache/pypoetry/virtualenvs/ 
 exit
+```
 
 To add a dependency, use poetry add --dev <package_name>@latest
 
 for example:
-
+```
 poetry add --dev selenium@latest
 poetry add --dev pytest@latest
-
+```
 Alternatively, you can install multiple dependencies
 in one line by writing them one after another like so:
-
+```
 poetry add --dev black flake8 pre-commit tox python-dotenv
-
+```
 Selenium is used for UI automation, pytest and tox for 
 testing our code for different version of Python, black
 and flake8 for PEP-8 formatting, and pre-commit
@@ -69,10 +70,10 @@ Note: some packages may require a higher version
 of Python to work. So you can jut go in the pyproject.toml
 and update the version (e.g. python_version >= 3.9.)
 
-After all dependencies have been install, a poetry.lock
+After all dependencies have been install, a ```poetry.lock```
 file should have been generatered.
 
-You can use the command poetry show --tree to see dep-
+You can use the command ```poetry show --tree``` to see dep-
 endencies in tree hierarchy format. This will give 
 you a better sense of what packages belong to what group 
 of dependencies.
@@ -83,7 +84,7 @@ The first thing I did when creating this project was
 to create my fixtures. Fixtures give your test contextual
 information that they can use to set up your project.
 
-In conftest.py I have 2 main fixtures. The first is
+In ```conftest.py``` I have 2 main fixtures. The first is
 driver, which is the Chrome driver that is used
 to spawn a new test window and gives other test
 context as to what it should do.
@@ -92,7 +93,7 @@ The second fixture is called envars which is used
 for tests that need to access sensitive information 
 such as username and password.
 
-test_suite.py contains all the tests that 
+```test_suite.py``` contains all the tests that 
 pytest will run. 
 
 The first, test will test that login is successful.
@@ -130,22 +131,22 @@ helper_functions folder and import it as needed.
 To get my selectors, I would inspect each element,
 copy the selector, and test that the selector
 works by typing the following into the console:
-
+```
 document.querySelector(<CSS_SELECTOR>)
-
+```
 ![Selectors](/documentation/screenshots/get_selectors.jpg?raw=true "javascript_console")
 
 To run the tests, simply type:
-
+```
 pytest test_suite.py
-
+```
 Make sure you are in the project base directory when
 you do so.
 
-The .pre-commit-config.yaml file defines how 
+The ```.pre-commit-config.yaml``` file defines how 
 I want my commit hook to work
 
-tox.ini contains which PEP-8 rules I want to ignore
+```tox.ini``` contains which PEP-8 rules I want to ignore
 when linting. It also defines tests that I want to 
 run with different version of Python. This will be
 triggered when you commit a change to git.
