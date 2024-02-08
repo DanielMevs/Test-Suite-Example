@@ -24,11 +24,11 @@ To start the project first type poetry init to create a
 pyproject.toml file that all dependencies meta data about 
 the project will be stored.
 
-Use the screenshot as a template for how to init 
+Use the screenshot below as a template for how to init 
 the project. Then you should see a pyproject.toml
 file created
 
-<screenshot>
+![Installation instructions](/documentation/screenshots/poetry_init.jpg?raw=true "poetry init")
 
 Type poetry shell to activate the new virtual environment
 
