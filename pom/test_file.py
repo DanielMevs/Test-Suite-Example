@@ -1,11 +1,11 @@
-from conftest import env_vars, driver
+from .conftest import env_vars, driver
 from pytest import fixture
-from pages.helpers.file_reader import read_file
-from pages.home import Home
-from pages.new_customer import NewCustomer
-from pages.form_authentication import FormAuthentication
-from pages.nav_bar import NavBar
-from pages.home_validator import HomeValidator
+from .pages.helpers.file_reader import read_file
+from .pages.home import Home
+from .pages.new_customer import NewCustomer
+from .pages.form_authentication import FormAuthentication
+from .pages.nav_bar import NavBar
+from .pages.home_validator import HomeValidator
 
 
 def test_login(env_vars: fixture, driver: fixture) -> None:

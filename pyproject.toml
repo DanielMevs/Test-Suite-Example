@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "test_suite"
+name = "test_file"
 version = "0.1.0"
 description = "Test suite for 360 manager"
 authors = ["DanielMevs <dannymevs@hotmail.com>"]
