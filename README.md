@@ -141,7 +141,6 @@ works by typing the following into the console:
 document.querySelector(<CSS_SELECTOR>)
 ```
 
-![Selectors](/documentation/screenshots/get_selectors.jpg?raw=true "javascript_console")
 
 To run the tests, simply type:
 
