@@ -24,13 +24,8 @@ version of Python you have installed on your system.
 
 To start the project first type poetry init to create a
 `pyproject.toml` file that all dependencies meta data about
-the project will be stored.
-
-Use the screenshot below as a template for how to init
-the project. Then you should see a pyproject.toml
+the project will be stored. Then you should see a pyproject.toml
 file created
-
-![Installation instructions](/documentation/screenshots/poetry_init.jpg?raw=true "poetry init")
 
 Type poetry shell to activate the new virtual environment
 
@@ -140,7 +135,6 @@ works by typing the following into the console:
 ```
 document.querySelector(<CSS_SELECTOR>)
 ```
-
 
 To run the tests, simply type:
 
