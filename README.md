@@ -1,4 +1,4 @@
-﻿# Test Assessment
+﻿# Test Suite Example
 
 For this project, I'm using poetry.
 Poetry is a dependency management tool and I use it

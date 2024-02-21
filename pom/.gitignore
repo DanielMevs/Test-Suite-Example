@@ -1,3 +1,7 @@
 __pycache__
 .pytest_cache
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> ba58a122d5d459436ee9240a552df9b157b9f6c0
